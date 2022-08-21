@@ -7,3 +7,7 @@ This action will read the name, version and the latest built crate name. (**THIS
 - `version`: The crate version
 - `lastBuiltCrateName`: The last built crate version (`{name}-{version}.crate`)
 - `crateName`: The name of the crate
+
+
+## Credits
+- Toml parsing from: https://github.com/BinaryMuse/toml-node/tree/master/lib
