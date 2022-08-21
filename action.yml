@@ -1,0 +1,17 @@
+name: 'Rust config reader'
+description: 'Extract important data from Cargo.toml'
+inputs:
+  path:
+    description: 'Path to Cargo.toml'
+    required: false
+    default: './Cargo.toml'
+outputs:
+  version:
+    description: 'The version of the crate'
+  lastBuiltCrateName:
+    description: 'The name of the lastly built crate (not path)'
+  crateName:
+    description: 'The name of the create'
+runs:
+  using: 'node16'
+  main: 'index.js'
